@@ -1,0 +1,62 @@
+{
+    "Level 1": {
+        "text": "Hey!&This is the first lesson on how to play chess.&We'll go through how the king moves.&%The king moves in 1 square any direction, and is the most important piece you have, so you must defend him at all costs.&If the king is attacked, i.e. it could be taken on the next move, it is \"in check.\"&When you are in check and you can't get out of check, that is called \"checkmate\"&There is a pawn on this board. We will cover pawns later, but just know it will move 1 square down the board.&If it gets to the end of the board, you lose.&Try to capture it!",
+        "img": "/img/kingmoves.png",
+        "fen": "8/8/8/2K3p1/8/8/8/8 w - - 0 1",
+        "winCondition": "capture"
+    },
+    "Level 2": {
+        "text": "Next up is the rook.&%It moves horizontally and vertically as much as you want it to.&Practice again by capturing this pawn.",
+        "img": "/img/rookmoves.png",
+        "fen": "8/8/7p/8/8/3R4/8/8 w - - 0 1",
+        "winCondition": "capture"
+    },
+    "Level 3": {
+        "text": "Now for the bishop.&%The bishop moves diagonally as much as you want it to.&I've made this a little trickier by putting pawns in your way, so you'll have to navigate around them.",
+        "img": "/img/bishopmoves.png",
+        "fen": "8/pBp5/P1P2p2/2p2Pp1/2P5/8/8/8 w - - 0 1",
+        "winCondition": "capture"
+    },
+    "Level 4": {
+        "text": "Next stop: the queen!&%The queen is the strongest piece on the board, acting like a bishop and rook combined!&Taking this pawn down will be no problem!&Also, don't mind the kings, the library I use to create the chess board was acting strange without them.",
+        "img": "/img/queenmoves.png",
+        "fen": "k1K5/P7/1PP5/8/7p/3Q4/8/8 w - - 0 1",
+        "winCondition": "capture"
+    },
+    "Level 5": {
+        "text": "Now for the knight...&Wait!&That's me!&%I move in an L shape. Or 2 steps forward, one to the side. Or moving to the other edge of a 2x3 rectangle. *sigh* I guess my movement is very strange...",
+        "img": "/img/knightmoves.png",
+        "fen": "8/8/8/3Np3/8/8/8/8 w - - 0 1",
+        "winCondition": "capture"
+    },
+    "Level 6": {
+        "text": "We've covered pawns before, but let's talk about them in more detail. Pawns move forwards 1 square each turn, as we've seen before,&%but they capture 1 square diagonally. This means that you cannot take a piece directly in front of a pawn, and a pawn can move diagonally if it is taking a piece.&So you might be asking, what happens if they get to the end of the board? If their movement is only forwards, then they can't just move off of the board.&Well, in that situation, you can swap your pawn for a new piece, like a queen.&That's why you've been losing if a pawn gets to the other side, because promoting a pawn usually ends a real game too.",
+        "img": "/img/pawnmoves.png",
+        "fen": "8/8/4p3/8/8/3P4/8/8 w - - 0 1",
+        "winCondition": "capture"
+    },
+    "Level 7": {
+        "text": "People didn't like that their pawns moved 1 square, since they had to make multiple moves with them. So they devised a plan to make the pawns able to move 2 squares forwards on the first move.&%They didn't make it easy to learn huh...........&For this challenge, try and move a pawn forwards 2.",
+        "img": "/img/pawn2squares.png",
+        "fen": "start",
+        "winCondition": "pawn2squares"
+    },
+    "Level 8": {
+        "text": "Now let's cover en passant!&%A bunch of French people didn't like that when you move 2 squares with a pawn, it can move past where another pawn can take it.&%So, naturally, they just added a rule that says you can take the pawn if it is like that.&Keep in mind, though that this only works for one turn.",
+        "img": "/img/enpassant.png",
+        "fen": "rnbqkbnr/ppp1pppp/8/3pP3/8/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 1",
+        "winCondition": "capture"
+    },
+    "Level 9": {
+        "text": "Castling!&%This is a special move where the rook slides up to the king and the king jumps over the rook.&Castling has some rules that you need to know about:&1. You cannot castle out of check (psst! Remember check is when the king is attacked)&2. You cannot castle through check, i.e. if you castle and your rook can be taken, castling is not possible.&3. Neither the king nor the rook has moved for the whole game.&4. All the pieces inbetween the king and rook are moved out of the way.",
+        "img": "/img/castle.png",
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "winCondition": "castle"
+    },
+    "Level 10": {
+        "text": "The board is set up with the bottom right corner as a light square.&The rooks are at the 2 corners, then the knights, then the bishops.&The queen goes on the same colo(u)r square as she is, and the king goes next to her.&There is a row of 8 pawns at the front.&Use all of the skills we've learned now to play this bot!",
+        "img": "",
+        "fen": "start",
+        "winCondition": "nothing"
+    }
+}
